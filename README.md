@@ -6,10 +6,9 @@ An example could be a summary of the diagnosis in easy-to-understand language; o
 
 ## Related Information
 
-Released under the MIT license - see the LICENSE file for details.
+Released under the MIT license – see the LICENSE file for details.
 
 Developed by Andreas Jakl, St. Pölten University of Applied Sciences
 
-- [https://www.fhstp.ac.at/en/academic-studies-continuing-education/media-digital-technologies/digital-healthcare?set_language=en](Digital Healthcare Degree Program, St. Pölten University of Applied Sciences, Austria)
+- [Digital Healthcare Degree Program, St. Pölten University of Applied Sciences, Austria](https://www.fhstp.ac.at/en/academic-studies-continuing-education/media-digital-technologies/digital-healthcare?set_language=en)
 - <https://www.andreasjakl.com/>
-- <https://twitter.com/andijakl>
