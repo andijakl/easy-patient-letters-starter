@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Easy Patient Letters</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- jQuery first, then Bootstrap JS (includes popper) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Socket.io client code. The file is served by our Node.js server because we installed the module.
+    See: https://socket.io/docs/v4/client-installation/#standalone-build -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Our own logic -->
+    <script src="language.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Easy Patient Letters</h1>
+                <form id="patient_letter_form">
+                    <div class="input-group">
+                        <textarea class="form-control" id="patient_letter_text" rows="5"
+                            placeholder="Copy your patient letter here"></textarea>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </span>
+                    </div>
+                </form>
+                <div class="errormsg alert alert-warning hide" role="alert"></div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Analysis</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Result</td>
+                            <td><span class="result_echo" style="white-space: pre-line"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
