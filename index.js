@@ -14,7 +14,7 @@ const io = new Server(httpServer);
 // An easy way to see the Node.js logs on Azure is to use the "Log stream" feature.
 // You can access an easy admin panel for your Azure Web App by adding scm after the app name in the URL.
 // Example: https://easy-patient-letters.azurewebsites.net -> https://easy-patient-letters.scm.azurewebsites.net
-// On Azure, set the environment variable in the service settings/configuration -> application settings.
+// On Azure, set the environment variable in the service settings/configuration -> environment variables.
 
 
 // You do not need to change the following settings
@@ -39,8 +39,8 @@ async function analyzePatientLetter(patientLetterText, socketId) {
 
     try {
         // TODO: call the OpenAI API here
-        // See: https://beta.openai.com/docs/api-reference/create-completion
-        
+        // See: https://platform.openai.com/docs/api-reference/chat/create
+
 
         io.to(socketId).emit('result_echo', 'Backend received and returned: ' + patientLetterText);
     } catch (error) {
