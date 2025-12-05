@@ -38,8 +38,8 @@ async function analyzePatientLetter(patientLetterText, socketId) {
 
 
     try {
-        // TODO: call the OpenAI API here
-        // See: https://platform.openai.com/docs/api-reference/chat/create
+        // TODO: call the OpenAI API here with the deployment of the model in Azure.
+        // See the deployment info page on Azure for the endpoint URL, API version, and deployment name.
 
 
         io.to(socketId).emit('result_echo', 'Backend received and returned: ' + patientLetterText);
